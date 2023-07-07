@@ -161,6 +161,7 @@
 	}
 
 	.list-reset {
+		padding: 0;
 		text-decoration: none;
 		list-style: none;
 	}
@@ -208,5 +209,20 @@
 		margin-top: 15px;
 		color: #fff;
 		font-size: 14px;
+	}
+
+	@media (max-width: 520px) {
+		.container {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.list__item {
+			padding: 10px;
+		}
+
+		.list__item:not(:nth-child(4n)) {
+			margin-right: 5px;
+		}
 	}
 </style>
